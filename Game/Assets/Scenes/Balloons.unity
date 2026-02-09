@@ -701,7 +701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2938196036978248635, guid: 13bee6a070985354cae67faa07071411, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.795
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 2938196036978248635, guid: 13bee6a070985354cae67faa07071411, type: 3}
       propertyPath: m_LocalPosition.z
@@ -735,34 +735,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4136782538929813795, guid: 13bee6a070985354cae67faa07071411, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4136782538929813795, guid: 13bee6a070985354cae67faa07071411, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4136782538929813795, guid: 13bee6a070985354cae67faa07071411, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1267209330}
-    - target: {fileID: 4136782538929813795, guid: 13bee6a070985354cae67faa07071411, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4136782538929813795, guid: 13bee6a070985354cae67faa07071411, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Reset
-      objectReference: {fileID: 0}
-    - target: {fileID: 4136782538929813795, guid: 13bee6a070985354cae67faa07071411, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ResetAfterDelay, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4136782538929813795, guid: 13bee6a070985354cae67faa07071411, type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5575201989463816212, guid: 13bee6a070985354cae67faa07071411, type: 3}
       propertyPath: m_Name
       value: Bullet
@@ -772,17 +744,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13bee6a070985354cae67faa07071411, type: 3}
---- !u!114 &1267209330 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5207259461776499491, guid: 13bee6a070985354cae67faa07071411, type: 3}
-  m_PrefabInstance: {fileID: 1267209329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32e930ecdde25c4c8b54eba73323f24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1360998193
 PrefabInstance:
   m_ObjectHideFlags: 0

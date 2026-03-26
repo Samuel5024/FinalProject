@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class LevelMovement : MonoBehaviour
+public class PlayerBehavior : MonoBehaviour
 {
-    // Reference to the floor's Rigidbody Component
     public Rigidbody rb;
-    public float movementSpeed = -100f;
+    public float movementSpeed = 100f;
 
 
     void Update()

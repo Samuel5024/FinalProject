@@ -4,25 +4,25 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Shoot : MonoBehaviour
 {
-    private XRGrabInteractable grabInteractable;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
     private void Awake() 
     {
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
     }
    
     void Start()
     {
-        grabInteractable.activated.AddListener(Shoot);
+        grabInteractable.activated.AddListener(Fire);
     }
 
-    private void Shoot(ActivateEventArgs arg0)
+    private void Fire(ActivateEventArgs arg0)
     {
         Debug.Log("Bang!");
     }
 
     private void OnDestroy()
     {
-        grabInteractable.activated.RemoveListener(Shoot);
+        grabInteractable.activated.RemoveListener(Fire);
     }
 }

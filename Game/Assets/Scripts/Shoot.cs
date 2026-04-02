@@ -4,6 +4,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Shoot : MonoBehaviour
 {
+    [SerializeField] Transform spawnPoint;
+    [SerializeField] GameObject projectilePrefab;
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
 
     private void Awake() 
@@ -18,7 +20,7 @@ public class Shoot : MonoBehaviour
 
     private void Fire(ActivateEventArgs arg0)
     {
-        Debug.Log("Bang!");
+        Instantiate(projectilePrefab, spawnPoint.position, spawnPoint.rotation);
     }
 
     private void OnDestroy()

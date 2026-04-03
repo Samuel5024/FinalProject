@@ -1,13 +1,15 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float movementSpeed = 100f;
+    public CharacterController characterController;
+    public float movementSpeed = 3.0f;
+    public float rotationSpeed = 90.0f;
+    
 
-
-    void Update()
-    {
-        rb.AddForce(0, 0, movementSpeed * Time.deltaTime);        
-    }
+    // void Update()
+    // {
+    //     characterController.AddForce(0, 0, movementSpeed * Time.deltaTime);        
+    // }
 }

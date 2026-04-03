@@ -543,5 +543,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3fae629063f844fbe3479461972725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  projectilePrefab: {fileID: 0}
+  spawnPoint: {fileID: 8098502775117586399}
+  projectilePrefab: {fileID: 5575201989463816212, guid: 13bee6a070985354cae67faa07071411, type: 3}

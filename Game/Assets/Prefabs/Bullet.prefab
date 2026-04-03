@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 5594418796154164729}
   - component: {fileID: 3557450852171189872}
   - component: {fileID: 8796969148750129203}
-  - component: {fileID: 5207259461776499491}
+  - component: {fileID: 2422732569066850801}
+  - component: {fileID: 5745856764696266835}
+  - component: {fileID: 3499059122055165177}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -109,7 +111,34 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5207259461776499491
+--- !u!54 &2422732569066850801
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575201989463816212}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5745856764696266835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +147,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5575201989463816212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32e930ecdde25c4c8b54eba73323f24, type: 3}
+  m_Script: {fileID: 11500000, guid: 9763dd914de5da8428fff17f37a35c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delaySeconds: 5
+  speed: 100
+--- !u!114 &3499059122055165177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575201989463816212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a4eb38f51367b46b865d1f028f4eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkOutOfBounds: 1
+  minBounds: {x: -Infinity, y: -Infinity, z: -Infinity}
+  maxBounds: {x: Infinity, y: Infinity, z: Infinity}
+  checkTimeout: 1
+  timeOut: 15

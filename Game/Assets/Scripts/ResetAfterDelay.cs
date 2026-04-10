@@ -5,11 +5,11 @@ using UnityEngine;
 public class ResetAfterDelay : MonoBehaviour
 {
     public float delaySeconds = 5f;
-    private Vector3 startPosition;
+    private Vector3 spawnPoint;
 
     private void Start()
     {
-        startPosition = transform.position;
+        spawnPoint = transform.position;
     }
 
     public void Reset()
@@ -20,7 +20,7 @@ public class ResetAfterDelay : MonoBehaviour
     IEnumerator AfterDelay()
     {
         yield return new WaitForSeconds(delaySeconds);
-        transform.position = startPosition;
+        transform.position = spawnPoint;
 
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.linearVelocity = Vector3.zero;

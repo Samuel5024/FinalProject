@@ -7,7 +7,7 @@ public class PlayerRespawn : MonoBehaviour
     {
         if(transform.position.y < threshold)
         {
-            transform.position = new Vector3(0f, 100f, 0f);
+            transform.position = new Vector3(0f, 5f, 0f);
         }
     }
 }

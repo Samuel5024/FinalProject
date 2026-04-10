@@ -3,9 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerJump : MonoBehaviour
 {
-    private InputActionReference jumpButton;
-    private float jumpHeight = 2.0f;
-    private float gravityValue = -9.81f;
+    [SerializeField] private InputActionReference jumpButton;
+    [SerializeField] private float jumpHeight = 2.0f;
+    [SerializeField] private float gravityValue = -9.81f;
     private CharacterController characterController;
     private Vector3 playerVelocity;
 

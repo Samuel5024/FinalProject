@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+        Debug.Log("You're Health is: " + health);
     }
 
     public void TakeDamage(int amount) 
@@ -16,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
         health -= amount;
         if(health <= 0)
         {
-            playerRespawn.RespawnPlayer();
+            Debug.Log("You are out of health!!");
         }
     }
 

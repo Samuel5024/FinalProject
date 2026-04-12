@@ -9,8 +9,8 @@ public class DealDamage : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("You have taken damage");
             playerHealth.TakeDamage(damage);
+            Debug.Log("You have taken damage");
         }
     }
 }

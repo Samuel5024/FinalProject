@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
+    public PlayerHealth playerHealth;
     public float threshold; //Y-value of Transform
     public void FixedUpdate()
     {
@@ -12,5 +13,7 @@ public class PlayerRespawn : MonoBehaviour
     public void RespawnPlayer()
     {
         transform.position = new Vector3(0f, 5f, 0f);
+        playerHealth.TakeDamage(2);
+        Debug.Log("Current Health: " + playerHealth.health);
     }
 }

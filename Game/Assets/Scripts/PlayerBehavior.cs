@@ -4,7 +4,6 @@ public class PlayerBehavior : MonoBehaviour
 {
     public CharacterController characterController;
     public float movementSpeed = 3.0f;
-    // public float downwardForce = -5.0f;
     
 
     void Update()

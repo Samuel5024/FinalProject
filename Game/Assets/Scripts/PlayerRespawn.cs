@@ -14,6 +14,5 @@ public class PlayerRespawn : MonoBehaviour
     {
         transform.position = new Vector3(0f, 5f, 0f);
         playerHealth.TakeDamage(2);
-        Debug.Log("Current Health: " + playerHealth.health);
     }
 }

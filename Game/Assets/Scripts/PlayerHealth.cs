@@ -21,16 +21,9 @@ public class PlayerHealth : MonoBehaviour
         {
             healthBar.UpdateHealthBar(maxHealth, health);
         }
-
         else
         {
             healthBar.UpdateHealthBar(maxHealth, health);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

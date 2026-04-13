@@ -3,12 +3,14 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public PlayerRespawn playerRespawn;
+    public HealthBar healthBar;
     public int health;
     public int maxHealth = 10;
 
     void Start()
     {
         health = maxHealth;
+        healthBar.UpdateHealthBar(maxHealth, health);
         Debug.Log("You're Health is: " + health);
     }
 
@@ -17,7 +19,12 @@ public class PlayerHealth : MonoBehaviour
         health -= amount;
         if(health <= 0)
         {
-            Debug.Log("You are out of health!!");
+            healthBar.UpdateHealthBar(maxHealth, health);
+        }
+
+        else
+        {
+            healthBar.UpdateHealthBar(maxHealth, health);
         }
     }
 

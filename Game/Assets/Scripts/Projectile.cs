@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 200f;
+    public float speed = 1000f;
     private Rigidbody rb;
     
     private void Awake()

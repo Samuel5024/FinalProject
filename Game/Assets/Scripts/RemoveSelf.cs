@@ -17,28 +17,36 @@ public class RemoveSelf : MonoBehaviour
         }
     }
     
-    private void Update()
-    {
-        if(checkOutOfBounds)
-        {
-            Vector3 pos = transform.position;
-            if(pos.x < minBounds.x || pos.x > maxBounds.x ||
-               pos.y < minBounds.y || pos.y > maxBounds.y ||
-               pos.z < minBounds.z || pos.z > maxBounds.z)
-            {
-                Remove();
-            }
-        }
+    // private void Update()
+    // {
+    //     if(checkOutOfBounds)
+    //     {
+    //         Vector3 pos = transform.position;
+    //         if(pos.x < minBounds.x || pos.x > maxBounds.x ||
+    //            pos.y < minBounds.y || pos.y > maxBounds.y ||
+    //            pos.z < minBounds.z || pos.z > maxBounds.z)
+    //         {
+    //             Remove();
+    //         }
+    //     }
 
-        if(checkTimeout && Time.time > timer)
-        {
-            Remove();
-        }
-    }
+    //     if(checkTimeout && Time.time > timer)
+    //     {
+    //         Remove();
+    //     }
+    // }
 
-    private void Remove()
+    // private void Remove()
+    // {
+    //     // Destroy(gameObject);
+    //     gameObject.SetActive(false);
+    // }
+
+    public void OnTriggerEnter(Collider other) 
     {
-        // Destroy(gameObject);
-        gameObject.SetActive(false);
+        Debug.Log("Something entered");
+        if(other.CompareTag("Player")){
+            gameObject.SetActive(false);
+        }
     }
 }

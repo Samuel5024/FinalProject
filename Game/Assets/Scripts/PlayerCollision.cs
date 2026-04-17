@@ -4,16 +4,11 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerHealth playerHealth;
     public int damage = 2;
-    void OnCollisionEnter(Collision collision)
+   public void OnTriggerEnter(Collider other) 
     {
-        if(collision.collider.name == "Obstacle")
-        {
+        Debug.Log("Obstacle entered");
+        if(other.CompareTag("Obstacle")){
             playerHealth.TakeDamage(damage);
-            Debug.Log("You have taken damage");
-        }
-        else
-        {
-            Debug.Log("Something isn't working...");
         }
     }
 }

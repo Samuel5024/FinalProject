@@ -2,20 +2,28 @@ using UnityEngine;
 
 public class RemoveSelf : MonoBehaviour
 {
-    public bool checkOutOfBounds = true;
-    public Vector3 minBounds = Vector3.negativeInfinity;
-    public Vector3 maxBounds = Vector3.positiveInfinity;
-    public bool checkTimeout = true;
-    public float timeOut = 15f;
-    private float timer;
-
-    private void OnEnable()
+    public void OnTriggerEnter(Collider other) 
     {
-        if(checkTimeout)
+        Debug.Log("Something entered");
+        if(other.CompareTag("Player"))
         {
-            timer = Time.time + timeOut;
+            gameObject.SetActive(false);
         }
     }
+    // public bool checkOutOfBounds = true;
+    // public Vector3 minBounds = Vector3.negativeInfinity;
+    // public Vector3 maxBounds = Vector3.positiveInfinity;
+    // public bool checkTimeout = true;
+    // public float timeOut = 15f;
+    // private float timer;
+
+    // private void OnEnable()
+    // {
+    //     if(checkTimeout)
+    //     {
+    //         timer = Time.time + timeOut;
+    //     }
+    // }
     
     // private void Update()
     // {
@@ -41,12 +49,4 @@ public class RemoveSelf : MonoBehaviour
     //     // Destroy(gameObject);
     //     gameObject.SetActive(false);
     // }
-
-    public void OnTriggerEnter(Collider other) 
-    {
-        Debug.Log("Something entered");
-        if(other.CompareTag("Player")){
-            gameObject.SetActive(false);
-        }
-    }
 }

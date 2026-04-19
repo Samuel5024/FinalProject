@@ -4,6 +4,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public PlayerRespawn playerRespawn;
     public HealthBar healthBar;
+    public GameManager gameManager;
     public int health;
     public int maxHealth = 10;
 
@@ -11,7 +12,6 @@ public class PlayerHealth : MonoBehaviour
     {
         health = maxHealth;
         healthBar.UpdateHealthBar(maxHealth, health);
-        Debug.Log("You're Health is: " + health);
     }
 
     public void TakeDamage(int amount) 
@@ -20,6 +20,8 @@ public class PlayerHealth : MonoBehaviour
         if(health <= 0)
         {
             healthBar.UpdateHealthBar(maxHealth, health);
+            gameManager.EndGame();
+
         }
         else
         {

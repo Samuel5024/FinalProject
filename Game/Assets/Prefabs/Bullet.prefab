@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3499059122055165177}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,8 +163,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a4eb38f51367b46b865d1f028f4eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkOutOfBounds: 1
-  minBounds: {x: -Infinity, y: -Infinity, z: -Infinity}
-  maxBounds: {x: Infinity, y: Infinity, z: Infinity}
   checkTimeout: 1
   timeOut: 15

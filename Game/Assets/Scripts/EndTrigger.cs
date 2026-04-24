@@ -3,11 +3,8 @@ using UnityEngine;
 public class EndTrigger : MonoBehaviour
 {
     public GameManager gameManager;
-    public void OnTriggerEnter(Collider other) 
+    public void OnTriggerEnter() 
     {
-        if(other.CompareTag("Player"))
-        {
-            gameManager.MainMenu();
-        }
+        gameManager.CompleteLevel();
     }
 }

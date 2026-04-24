@@ -661,11 +661,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288124847}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &329662618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3606247321767810851, guid: 5195b8a74d3328a4085920c0b5761f18, type: 3}
-  m_PrefabInstance: {fileID: 1354426340}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &338662281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,7 +1271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartDelay: 1
-  completeLevelUI: {fileID: 329662618}
 --- !u!4 &722594370
 Transform:
   m_ObjectHideFlags: 0
@@ -1382,6 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 772052197}
+  gameManager: {fileID: 0}
   damage: 2
 --- !u!1 &795737199
 GameObject:
@@ -3117,28 +3112,15 @@ GameObject:
   - component: {fileID: 1904742054}
   - component: {fileID: 1904742053}
   - component: {fileID: 1904742052}
-  - component: {fileID: 1904742051}
   - component: {fileID: 1904742056}
+  - component: {fileID: 1904742057}
   m_Layer: 0
   m_Name: End
-  m_TagString: Untagged
+  m_TagString: End
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1904742051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904742050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcd368d80283bb249bc2936e2a4e1981, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 722594369}
 --- !u!65 &1904742052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3255,6 +3237,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1904742057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904742050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79caf1da12f23b4408eba727afdf364f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 772052197}
+  gameManager: {fileID: 722594369}
+  damage: 2
 --- !u!1001 &1978715729
 PrefabInstance:
   m_ObjectHideFlags: 0

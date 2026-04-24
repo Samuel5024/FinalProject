@@ -3,10 +3,11 @@ using UnityEngine;
 public class EndTrigger : MonoBehaviour
 {
     public GameManager gameManager;
-
-    void OnTriggerEnter() 
+    public void OnTriggerEnter(Collider other) 
     {
-        Debug.Log("We have entered");
-        gameManager.CompleteLevel();
+        if(other.CompareTag("Player"))
+        {
+            gameManager.MainMenu();
+        }
     }
 }

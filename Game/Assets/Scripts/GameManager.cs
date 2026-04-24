@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public void CompleteLevel()
     {
-        completeLevelUI.SetActive(true);
+        MainMenu();
     }
 
     public void EndGame()
@@ -20,5 +20,10 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

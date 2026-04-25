@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Balloons Dev
+  productName: VR Final Project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -142,7 +142,7 @@ PlayerSettings:
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1.0
   preloadedAssets:
-  - {fileID: 11400000, guid: 4291301b4baad194285eb99bdf132847, type: 2}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
   - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   - {fileID: 5996612919515756449, guid: c3534f1c11e2c5e468fb3ef5dd8dd4be, type: 2}
@@ -861,8 +861,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Balloons Dev
-  metroPackageVersion: 
+  metroPackageName: BalloonsDev
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -870,7 +870,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Balloons Dev
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Balloons Dev
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

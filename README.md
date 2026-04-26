@@ -1,9 +1,11 @@
-# Final Project
-VR platformer prototype. Your goal: make it to the end while avoiding the obstacles.  
+# VR Final Project
+VR platformer prototype.  
+Your goal: make it to the end while avoiding the obstacles.    
+
 Controls:  
 Press "A" to jump  
 Press the trigger to shoot  
-Destroy the barriers with bullets  
+Destroy the barriers with bullets
 
 Credits:  
 GameDev Blueprint - How to make a VR Game in Unity 6 Under 60 minutes - Beginner tutorial  

@@ -5,16 +5,15 @@ public class GameManager : MonoBehaviour
 {
     public float restartDelay = 2f;
 
-    public void CompleteLevel()
-    {
-        Debug.Log("Level Completed.");
-        MainMenu();
-    }
-
     public void EndGame()
     {
         Debug.Log("Game Over");
         Invoke("Restart", restartDelay);
+    }
+
+    public void CompleteLevel()
+    {
+        Debug.Log("Level Won!!");
     }
 
     public void Restart()
